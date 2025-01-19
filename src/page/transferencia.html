@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro do Banco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="/assets/transferencia.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="main-login">
+    <div class="left-login">
+        <h1>Transferência de Valores</h1>
+        <div class="left-login-imagem">
+            <!-- Aqui você pode adicionar uma imagem ou outro conteúdo -->
+        </div>
+    </div>
+    <div class="right-login">
+        <div class="card-login">
+            <h1>Realizar Transferência</h1>
+            <div class="textfield">
+                <label for="currency">Selecione a Moeda:</label>
+                <select id="currency">
+                    <option value="real">Real (BRL)</option>
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="ethereum">Ethereum (ETH)</option>
+                </select>
+            </div>
+            <div class="textfield">
+                <label for="amount">Valor:</label>
+                <input type="number" id="amount" placeholder="Insira o valor">
+            </div>
+            <div class="textfield">
+                <label for="recipient">Destinatário:</label>
+                <input type="text" id="recipient" placeholder="Insira o destinatário">
+            </div>
+            <button class="btn-login" onclick="transfer()">Transferir</button>
+            <div id="transfer-status" class="textfield" style="display: none; color: #00ff88; font-weight: bold;">Transferência realizada!</div>
+            <div class="footer-links">
+                <a href="inicio.html" class="footer-link">Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../script/trasferencia.js"></script>
+
+</body>
+</html>
